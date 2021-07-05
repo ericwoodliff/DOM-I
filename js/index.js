@@ -39,7 +39,11 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('img/logo.png', siteContent["nav"]["img/logo.png"])
+logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+logo.setAttribute('src', 'img/header-img.png')
 
-h1.textContent = 'DOM Is Awesome'
+const firstHeading = document.querySelector('h1');
+firstHeading.textContent = "DOM is Awesome";
+
+const nav = document.querySelector('nav');
